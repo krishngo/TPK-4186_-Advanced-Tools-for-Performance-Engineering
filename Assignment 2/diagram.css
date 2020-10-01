@@ -1,0 +1,19 @@
+body {
+  background-color: Linen;
+}
+h1 {
+  background-color: Black;
+  color: White;
+  font-family: verdana;
+  font-size: 140%;
+}
+h2 {
+  background-color: Black;
+  color: White;
+}
+p {
+  color: black;
+}
+a {
+  border: 1px solid red;
+  }

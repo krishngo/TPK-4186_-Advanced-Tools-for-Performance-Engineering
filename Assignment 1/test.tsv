@@ -1,0 +1,17 @@
+circuit	CircuitTest
+tank	S
+Pipe	P1	2	0.8	0
+valve	V1	1
+pipe	P2	2	0.8	0
+pump	MP	0.75
+pipe	P3	2.5	0.8	0
+filter	F1	1
+pipe	P4	2.5	0.8	0
+bend	B1	0.8
+pipe	P5	1.5	0.8	90
+valve	V2	1
+pipe	P6	3.5	0.8	90
+bend	B2	0.8
+pipe	P7	1.5	0.8	0	
+bend	B3	0.8	
+tank	T	

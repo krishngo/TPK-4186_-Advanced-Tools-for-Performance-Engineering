@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Risk Assessment</title>
+  <link rel="stylesheet" href="diagram.css">
+  <link rel="stylesheet" href="TableTemplate.css">
+</head>
+<body>
+
+<h1 id="Introduction">TPK 4186 Assignment 2</h1>
+<p>This page provides a report of the assessment of the risk done on the new control system for the subsea plant.</p>
+<p>The flow diagram representing the activities to be followed is given below.</p>
+<img src="Flow Diagram.png" alt="The diagram representing the Control System project" width="700" height="400">
+<p>Summary of the activities done</p>
+<ul>
+<li> A <a href="#SubSectionModelChecker">checker</a> was created to assess the design of the model after parsing the model from the given xml file.</li>
+<br>
+<li> Monte-Carlo Simulation was then performed to find the different <a href="#SubSectionMonteCarloSimulation">statistics</a> of the total duration.</li>
+<br>
+<li> In addition machine learning techniques like <a href="#SubSectionClassification">classification</a> and <a href="#SubSectionRegression">regression</a> are also applied to raise alerts.</li>
+<br>
+<li> A <a href="#SubSectionConclusion"> Inference </a> of the performance of these techniques are also assessed.
+<br>
+
+
+</ul>
+
+
+<h1 id="SectionModelElements">Model Elements</h1>
+<p>The elements in the models are given below</p>
+
+<table id="Table">
+	<tr>
+		<th>
+ Lanes and Corresponding tasks		</th>
+	</tr>
+	<tr>
+		<td>
+		<b>
+MethodologyGroup		</b>
+		</td>
+		</tr>
+		<tr>
+			<td>
+SpecifySystem			</td>
+		</tr>
+		<tr>
+			<td>
+DeploySystem			</td>
+		</tr>
+	<tr>
+		<td>
+		<b>
+HardwareGroup		</b>
+		</td>
+		</tr>
+		<tr>
+			<td>
+DesignHardware			</td>
+		</tr>
+		<tr>
+			<td>
+PrototypeHardware			</td>
+		</tr>
+		<tr>
+			<td>
+TestHardware			</td>
+		</tr>
+		<tr>
+			<td>
+ManufactureHardware			</td>
+		</tr>
+	<tr>
+		<td>
+		<b>
+SoftwareGroup		</b>
+		</td>
+		</tr>
+		<tr>
+			<td>
+DesignSoftware			</td>
+		</tr>
+		<tr>
+			<td>
+ImproveSoftware			</td>
+		</tr>
+		<tr>
+			<td>
+ReleaseSoftware			</td>
+		</tr>
+	<tr>
+		<td>
+		<b>
+CertificationGroup		</b>
+		</td>
+		</tr>
+		<tr>
+			<td>
+DesignDocumentation			</td>
+		</tr>
+		<tr>
+			<td>
+DesignTraining			</td>
+		</tr>
+		<tr>
+			<td>
+PrepareCertification			</td>
+		</tr>
+		<tr>
+			<td>
+TrainOperators			</td>
+		</tr>
+		<tr>
+			<td>
+FinalizeCertification			</td>
+		</tr>
+</table>
+
+
+<h1 id="SubSectionModelChecker">Model checker</h1>
+<p>The model has to follow these conditions:</p>
+<p>Condition 1: There is one and only one node with no predecessor and this node is a gate.</p>
+<p>Condition 2: There is one and only one node with no successor, and this node is a gate.</p>
+
+
+<ul>
+CONGRATULATIONS! THE MODEL SATISFIES ALL THE CONDITIONS.</ul>
+
+
+<h1 id="SubSectionMonteCarloSimulation">Monte Carlo Simulation Statistics</h1>
+
+<p>This section shows the summary of the different statistics computed from the simulation.</p>
+
+<table id="Table">
+	<tr>
+		<th>
+Assessed Statistic		</th>
+		<th>
+Simulated Value		</th>
+	</tr>
+	<tr>
+		<td>
+Average duration		</td>
+		<td>
+100.72		</td>
+		<tr>
+			<td>
+Minimum duration			</td>
+			<td>
+85.6			</td>
+			<tr>
+				<td>
+Maximum duration				</td>
+				<td>
+115.11				</td>
+				<tr>
+					<td>
+0.5 quantile					</td>
+					<td>
+100.72					</td>
+					<tr>
+						<td>
+0.9 quantile						</td>
+						<td>
+106.27						</td>
+					</table>
+
+<br>
+<br>
+<img src="Histogram.png" alt="The histogram for the simulation performed" width="700" height="400">
+<br>
+<br>
+<h1 id="SubSectionClassification">Classification</h1>
+
+<p>Three different classification algorithms have been used to assess if the project will exceed 3 different maximum dates.</p>
+
+					<table id="Table">
+						<tr>
+							<th>
+Classification Model							</th>
+							<th>
+96							</th>
+							<th>
+102							</th>
+							<th>
+108							</th>
+						</tr>
+						<tr>
+							<td>
+Logistic Regression							</td>
+							<td>
+0.9							</td>
+							<td>
+0.82							</td>
+							<td>
+0.95							</td>
+						</tr>
+						<tr>
+							<td>
+Stochastic Gradient Descent							</td>
+							<td>
+0.88							</td>
+							<td>
+0.58							</td>
+							<td>
+0.95							</td>
+						</tr>
+						<tr>
+							<td>
+Multi-Layer Perceptron							</td>
+							<td>
+0.87							</td>
+							<td>
+0.71							</td>
+							<td>
+0.96							</td>
+						</tr>
+					</table>
+
+
+
+<h1 id="SubSectionRegression">Regression</h1>
+
+<p>Three different regression algorithms have been used to assess the risk of the project.</p>
+
+					<table id="Table">
+						<tr>
+							<th>
+Regression Model							</th>
+							<th>
+Accuracy							</th>
+						</tr>
+						<tr>
+							<td>
+Ridge Regression							</td>
+							<td>
+0.71							</td>
+							<tr>
+								<td>
+Lasso regression								</td>
+								<td>
+0.69								</td>
+								<tr>
+									<td>
+K-Neighbours Regressor									</td>
+									<td>
+0.63									</td>
+								</table>
+
+
+<h1 id="SubSectionConclusion">Inference</h1>
+<p>As can be seen from the data above, the performance of the machine learning algorithm varies depending on different factors.When the maximum date is not too close to the mean,
+<br>the classification technique gives good results (around 90% ).
+<br>
+<br>The regression models yields around 70% accuracy, except for the K-neighbours regressor technique (with n = 5) which yields the lowest.</p>
+
+
+<h2 id="SectionCreator">Created By</h2>
+<ol>
+Krishnan Gopakumar Nair
+</ol>
+
+</body>
+</html>

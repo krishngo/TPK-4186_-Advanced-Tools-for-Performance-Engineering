@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circuit</title>
+  <link rel="stylesheet" href="circuit.css">
+</head>
+<body>
+
+<h1 id="Introduction">TPK 4186 Assignment 1</h1>
+<p>This page provides an assessment of the pumping Circuits used to pump seawater in fish farms.</p>
+<p>An example of the circuit is given below.</p>
+<img src="Circuit System Example.JPG" alt="A simple pumping circuit" width="460" height="230">
+<p>It is organized as follows</p>
+<ul>
+<li> The different elements in the circuit is found here <a href="#SectionCircuitElements">here</a>.
+<li> The conditions to be satisfied so that the circuit is designed properly is shown here <a href="#SubSectionCircuitChecker">here</a>.
+<li> The Actual energy consumption for the given circuit can be found <a href="#SubSectionCalculations">here</a>.
+<li> The relation between energy consumption and pump efficiency for different velocities could be found here <a href="#SubSectionConsumptionVsEfficiency">here</a>.
+<li> The relation between energy consumption and diameter for different velocities could be found here <a href="#SubSectionConsumptionVsDiameter">here</a>.
+<li> The relation between energy consumption and height for different velocities could be found here <a href="#SubSectionConsumptionVsHeight">here</a>.
+<li> The relation between energy consumption and valve opening for different velocities  could be found here <a href="#SubSectionConsumptionVsValveState">here</a>.
+<li> TThe relation between energy consumption and filter condition for different velocities  could be found here <a href="#SubSectionConsumptionVsFilterState">here</a>.
+
+
+</ul>
+
+
+<h1 id="SectionCircuitElements">Circuit Elements</h1>
+<p>The elements in the circuit and their attributes:</p>
+
+<ul>
+	<li>
+tank: S	</li>
+	<li>
+pipe: P1 - Length: 2.00, Diameter: 0.80, Angle: 0.00	</li>
+	<li>
+valve: V1 - State: 1.00	</li>
+	<li>
+pipe: P2 - Length: 2.00, Diameter: 0.80, Angle: 0.00	</li>
+	<li>
+pump: MP - Efficiency: 0.75	</li>
+	<li>
+pipe: P3 - Length: 2.50, Diameter: 0.80, Angle: 0.00	</li>
+	<li>
+filter: F1 - State: 1.00	</li>
+	<li>
+pipe: P4 - Length: 2.50, Diameter: 0.80, Angle: 0.00	</li>
+	<li>
+bend: B1 - Diameter: 0.80	</li>
+	<li>
+pipe: P5 - Length: 1.50, Diameter: 0.80, Angle: 90.00	</li>
+	<li>
+valve: V2 - State: 1.00	</li>
+	<li>
+pipe: P6 - Length: 3.50, Diameter: 0.80, Angle: 90.00	</li>
+	<li>
+bend: B2 - Diameter: 0.80	</li>
+	<li>
+pipe: P7 - Length: 1.50, Diameter: 0.80, Angle: 0.00	</li>
+	<li>
+bend: B3 - Diameter: 0.80	</li>
+	<li>
+tank: T	</li>
+</ul>
+
+
+<h1 id="SubSectionCircuitChecker">Circuit Checker</h1>
+<p>The circuit has to follow these conditions:</p>
+<p>Condition 1: Circuit must begin and end with a tank.</p>
+<p>Condition 2: Circuit can have only two tanks.</p>
+<p>Condition 3: Second element must be a horizontal pipe.</p>
+<p>Condition 4: There should only be one pump in the circuit.</p>
+<p>Condition 5: All the pipes and bends should have the same diameter.</p>
+<p>Condition 6: Succeeding pipes should have the same angle.</p>
+<p>Condition 7: Bends should be preceeded and succeeded by pipes except before the final tank.</p>
+<p>Condition 8: Pumps should be preceeded and succeeded by horizontal pipes.</p>
+<p>Condition 9: Filters must be preceeded and succeeded by horizontal pipes.</p>
+<p>Condition 10: Valve must be preceeded and succeeded by pipes of same angle.</p>
+
+<ul>
+The given circuit satisfies all the conditions above</ul>
+
+
+<h1 id="SubSectionCalculations">Energy Consumption for the given circuit</h1>
+
+<p>The energy consumption in the given circuit is given here.</p>
+
+<ul>
+Energy Consumption = 3.371 kW</ul>
+
+
+
+<h1 id="SubSectionConsumptionVsEfficiency">Energy Consumption Vs Pump Efficiency</h1>
+
+<img src='Energy Consumption Vs PumpEfficiency.png' alt='hey' width='460' height='345'>
+
+
+<h1 id="SubSectionConsumptionVsDiameter">Energy Consumption Vs Inside Diameter</h1>
+
+<img src='Energy Consumption Vs Diameter.png' alt='hey' width='460' height='345'>
+
+<h1 id="SubSectionConsumptionVsHeight">Energy Consumption Vs Tank Height</h1>
+
+<img src='Energy Consumption Vs Height.png' alt='hey' width='460' height='345'>
+
+<h1 id="SubSectionConsumptionVsValveState">Energy Consumption Vs Valve Opening</h1>
+
+<img src='Energy Consumption Vs Valve.png' alt='hey' width='460' height='345'>
+
+<h1 id="SubSectionConsumptionVsFilterState">Energy Consumption Vs Filter Condition</h1>
+
+<img src='Energy Consumption Vs Filter.png' alt='hey' width='460' height='345'>
+
+<ul>
+<li> Back to <a href="#Introduction">top</a>.
+</ul>
+
+<h2 id="SectionCreator">Created By</h2>
+<ol>
+Krishnan Gopakumar Nair
+</ol>
+
+</body>
+</html>
